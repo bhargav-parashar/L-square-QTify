@@ -5,7 +5,7 @@ import { Box, CircularProgress } from "@mui/material";
 import Card from "../Card/Card";
 import styles from "./Section.module.css";
 
-const Section = ({title}) => {
+const Section = ({title,apiUrl}) => {
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const { enqueueSnackbar } = useSnackbar();
@@ -15,7 +15,7 @@ const Section = ({title}) => {
 
   const performApiCall = async () => {
     setIsLoading(true);
-    const url = "https://qtify-backend-labs.crio.do/albums/top";
+    const url = apiUrl;
     try {
       const response = await axios.get(url);
       setItems(response.data);

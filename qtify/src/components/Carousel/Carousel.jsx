@@ -4,7 +4,7 @@ import "swiper/css";
 import CarouselRightNavigation from "./CarouselRightNavigation/CarouselRightNavigation";
 import CarouselLeftNavigation from "./CarouselLeftNavigation/CarouselLeftNavigation";
 
-const Carousel = ({ data, callback }) => {
+const Carousel = ({ data, callback, type }) => {
   return (
     <Swiper
       style={{ padding: "0px 2vw" }}
@@ -18,7 +18,7 @@ const Carousel = ({ data, callback }) => {
       <CarouselRightNavigation />
       {data.map((item) => (
         <SwiperSlide key={item.id} style={{ width: "fit-content" }}>
-          {callback(item, "album")}
+          {callback(item, type)}
         </SwiperSlide>
       ))}
       <CarouselLeftNavigation />

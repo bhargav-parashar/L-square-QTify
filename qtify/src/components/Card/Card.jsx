@@ -10,19 +10,19 @@ function Card({ data, type }) {
         return (
           <Tooltip title={`${songs.length} songs`} placement="top" arrow>
             <div className={styles.wrapper}>
-                    <div className={styles.card}>
-                        <img src={image} alt="album" />
-                                    <div className={styles.banner}>
-                                    <Chip
-                                        label={`${follows} Follows`}
-                                        size="small"
-                                        className={styles.chip}
-                                    />
-                                    </div>
-                    </div>
-                    <div className={styles.titleWrapper}>
-                        <p style={{margin:0}}>{title}</p>
-                    </div>
+              <div className={styles.card}>
+                <img src={image} alt="album" />
+                <div className={styles.banner}>
+                  <Chip
+                    label={`${follows} Follows`}
+                    size="small"
+                    className={styles.chip}
+                  />
+                </div>
+              </div>
+              <div className={styles.titleWrapper}>
+                <p style={{ margin: 0 }}>{title}</p>
+              </div>
             </div>
           </Tooltip>
         );
@@ -35,9 +35,13 @@ function Card({ data, type }) {
             <div className={styles.card}>
               <img src={image} alt="song" />
               <div className={styles.banner}>
-                            <div className={styles.pill}>
-                                    <p>{likes} Likes</p>
-                            </div>
+                <div className={styles.pill}>
+                  <Chip
+                    label={`${likes} Likes`}
+                    size="small"
+                    className={styles.pill}
+                  />
+                </div>
               </div>
             </div>
             <div className={styles.titleWrapper}>

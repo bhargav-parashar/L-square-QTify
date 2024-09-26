@@ -12,8 +12,9 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Hero></Hero>
-      <Section title={"Top Albums"} apiUrl={"https://qtify-backend-labs.crio.do/albums/top"}/>
-      <Section title={"New Albums"} apiUrl={"https://qtify-backend-labs.crio.do/albums/new"}/>
+      <Section title={"Top Albums"} apiUrl={"https://qtify-backend-labs.crio.do/albums/top"} type={"album"}/>
+      <Section title={"New Albums"} apiUrl={"https://qtify-backend-labs.crio.do/albums/new"} type={"album"}/>
+      <Section title={"Songs"} apiUrl={"https://qtify-backend-labs.crio.do/songs"} type={"song"}/>
     </div>
   );
 }

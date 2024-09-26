@@ -6,7 +6,7 @@ import {ReactComponent as RightArrow} from "../../../assets/right-arrow.svg";
 const CarouselRightNavigation = ()=>{
     const swiper = useSwiper();
     const [isEnd, setIsEnd] = useState(swiper.isEnd);
-    console.log(isEnd);
+    
     useEffect(()=>{
         swiper.on("slideChange",function(){
             setIsEnd(swiper.isEnd);

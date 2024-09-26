@@ -7,7 +7,7 @@ import CarouselLeftNavigation from "./CarouselLeftNavigation/CarouselLeftNavigat
 const Carousel = ({ data, callback }) => {
   return (
     <Swiper
-      style={{ padding: "0px 2.5vw" }}
+      style={{ padding: "0px 2vw" }}
       initialSlide={0}
       modules={[Navigation]}
       spaceBetween={40}

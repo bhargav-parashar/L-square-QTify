@@ -4,9 +4,11 @@
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
+    column-gap: 7vw;
     margin: 0;
     justify-items:center ;
+    padding: 0px 2vw;
 }
 .header{
     display: flex;

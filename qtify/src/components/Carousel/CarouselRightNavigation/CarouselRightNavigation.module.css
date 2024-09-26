@@ -1,0 +1,6 @@
+.rightArrow {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  z-index: 2;
+}

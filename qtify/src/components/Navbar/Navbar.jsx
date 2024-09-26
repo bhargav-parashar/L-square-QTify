@@ -10,7 +10,6 @@ function Navbar({ searchData }) {
       <div>
         <Logo />
       </div>
-
       <Search
         placeholder="Search a song of your choice"
         searchData={searchData}
